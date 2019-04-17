@@ -38,7 +38,7 @@ end
 def play(my_songs)
     puts "Please enter a song name or number:"
     users_input = gets.chomp
-      if my_songs.include?(users_input)
+      if my_songs.keys.include?(users_input)
         puts "Playing #{users_input}"
       else
         puts "Invalid input, please try again"
